@@ -1,0 +1,134 @@
+.content-container {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+
+    .centerer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-center;
+        align-items: center;
+        gap: 6rem;
+    }
+}
+
+.delete-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+
+    p:hover {
+        cursor: pointer;
+    }
+}
+
+.save-edits {
+}
+
+.invalid-edits {
+    background-color: gray;
+}
+
+.valid-edits {
+    background-color: blue;
+}
+
+.displayName {
+    .user-info {
+        .not-editable {
+            width: 24rem;
+        }
+    }
+}
+
+
+.header {
+    display: flex;
+    .title {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    
+        .edit-button {
+            font-size: xx-large;
+        }
+    }
+    
+    .signout:hover {
+        color: red;
+        cursor: pointer;
+    }
+}
+
+.user-info {
+    padding: 2rem;
+    .label {
+        font-size: smaller;
+        padding-left: 0.5rem;
+        font-weight: bold;
+    }
+
+    .not-editable, .editable {
+        display: flex;
+        justify-content: center;
+        font-size:medium;
+        align-items: center;
+        background-color: rgb(173, 173, 173);
+        width: 14rem;
+        height: 4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border: solid black;
+        border-radius: 10px;
+    }
+}
+
+.save-edits {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-reviews {
+    width: fit-content;
+    color: gray;
+}
+
+.my-reviews:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.showingReviews {
+    color: black;
+}
+
+.tab {
+    text-indent: 20px;
+    font-size: large;
+}
+
+.actual-review {
+    font-size: normal;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.review-date {
+    font-weight: 600;
+}
+
+.decision-button:hover {
+    font-weight: bold;
+}

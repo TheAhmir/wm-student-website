@@ -1,0 +1,125 @@
+
+
+.search{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    
+    .input-group{
+      padding:10px;
+      border:2px solid;
+      margin:10px;
+    }
+    .input-group>label{
+      padding-left: 5px;
+      padding-right: 5px;
+      position:relative;
+      top:-25px;
+      left:20px;
+      background-color:white;
+    }
+
+    .input-group>input{
+      width: 100%;
+      height: 80%;
+      background-color: transparent;
+      border:none;
+      outline: none;
+      transform: translateY(-15px);
+      line-height: 2;
+      font-size: large;
+    }
+}
+
+.insights-link-container {
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+
+    .insights-link {
+        margin-top: 1rem;
+        text-decoration: none;
+        font-size: small;
+        border-radius: 3px;
+        background-color: lightblue;
+
+        .insights-link-text {
+            color: #323940;
+            padding: 5px;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin: 0px;
+        }
+        .insights-link-text:hover {
+            color: black;
+        }
+    }
+}
+
+.page-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    font-size: large;
+
+    .curPage {
+        font-weight: bold;
+        padding-bottom: 2rem;
+        translate: 0 -10px;
+    }
+    
+
+    .index {
+        padding: 5px;
+    }
+
+    .index:hover {
+        cursor: pointer;
+    }
+}
+
+.filtered-classes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 3rem;
+    font-size: larger;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+
+    .course-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        text-decoration: none;
+        background-color: #BBBBBB;
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 3px;
+        padding: 2rem;
+        transition: transform 0.1s ease-in-out;
+        
+        .course-link-text {
+            text-decoration: none;
+            width: fit-content;
+            font-size: larger;
+            color: black;
+        }
+
+        .course-meta {
+            font-weight: 600;
+        }
+
+        .review-count {
+            font-size: large;
+        }
+    }
+
+    .course-link:hover {
+        transform: translate(10px, -10px);
+    }
+}

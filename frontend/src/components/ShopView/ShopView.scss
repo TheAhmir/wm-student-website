@@ -1,0 +1,124 @@
+.recent{
+    display: flex;
+    gap: 4rem;
+    height: min-content;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    .recent-element {
+        width: 200px;
+        img {
+            height: 200px
+            
+        }
+    }
+}
+
+.shop-page {
+    margin-bottom: 4rem;
+}
+
+.course-search {
+    width: 100%;
+    justify-content: center;
+    aling-items: center;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.context {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.main-search {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    .main-element {
+        display: flex;
+        width: 100px;
+        padding: 1rem;
+        padding-bottom: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        width: max-content;
+        border: dashed gray;
+        border-radius: 5px;
+
+        .item-title {
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .first-image {
+                height: 100px;
+            }
+        }
+    }
+
+    .main-element:hover {
+        border: solid black;
+    }
+}
+
+.shop-add {
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 90px;
+}
+
+.shop-add:hover {
+    cursor: pointer;
+}
+
+.course-search {
+    padding:10px;
+    border:2px solid;
+}
+.course-search>label{
+    padding-left: 5px;
+    padding-right: 5px;
+    position:relative;
+    top:-25px;
+    left:20px;
+    background-color:white;
+}
+
+.course-search>input{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border:none;
+    outline: none;
+    line-height: 2;
+    font-size: x-large;
+}
+
+.course-search-input {
+}
+

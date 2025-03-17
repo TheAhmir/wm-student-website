@@ -1,0 +1,38 @@
+/* alertButton.scss */
+.page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.warning {
+    position: inherit;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+
+    strong {
+        color: hsl(45, 100%, 40%);
+    }
+}
+.background {
+    position: fixed;
+    top: 20%;
+    z-index: 1000; /* Ensure it's above other elements */
+    padding: 20px; /* Optional: padding for the alert */
+    border-radius: 3px; /* Optional: border radius for the alert */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for the alert */
+}
+
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px); /* Blur effect */
+    z-index: 999; /* Ensure it's below the alert */
+}
+
+

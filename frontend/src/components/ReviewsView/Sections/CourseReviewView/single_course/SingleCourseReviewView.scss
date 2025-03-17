@@ -1,0 +1,140 @@
+.heading {
+    text-align: center;
+}
+
+.empty-review-page, .review-page-loading {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 0;
+}
+
+.review-divider {
+    width: 100%;
+    border-top: 1px dashed slategray;
+    border-image: repeating-linear-gradient(
+        to right,
+        slategray 0px,
+        slategray 10px,
+        transparent 10px,
+        transparent 20px
+    ) 10;
+}
+
+.course-rating {
+    padding-top: 1rem;
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+
+    .text-rating {
+        margin-left: 2rem;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+        border-radius: 10px;
+
+        .rating-title {
+            font-size: medium;
+            font-weight: bold;
+        }
+    }
+
+    .low {
+        box-shadow: green 0px 0px 10px;
+    }
+
+    .med {
+        box-shadow: darkgoldenrod 0px 0px 10px;
+    }
+
+    .high {
+        box-shadow: red 0px 0px 10px;
+    }
+}
+
+.leave-a-review {
+    display: flex;
+    width: fit-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+}
+
+.leave-a-review:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.review-count {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1rem;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    .single-review {
+        width: 100%;
+        padding: 1rem;
+    
+        .meta-data {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.review-rating {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-trash {
+    display: flex;
+    gap: 2rem;
+}
+
+.trash-icon {
+    font-size: large;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(380deg) scale(1.2); /* 360 + 20 degrees */
+    }
+  }
+  
+  .trash-icon:hover {
+    animation: spin .5s ease-in-out forwards; /* 1s is the duration of the spin */
+    cursor: pointer;
+  }
+  

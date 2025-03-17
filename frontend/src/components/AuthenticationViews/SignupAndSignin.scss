@@ -1,0 +1,33 @@
+.signin-signup-page {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    
+
+    .fitting-div {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        .cool-container {
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            align-items: flex-start;
+            border-radius: 5px;
+        }
+    }
+}
+
+.divider-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .vertical-divider {
+        border-left: 1px solid gray; /* Color and width of the divider line */
+        height: 90%; /* Height of the divider */
+        margin: 15px 10px; /* Optional: space around the divider */
+    }
+}

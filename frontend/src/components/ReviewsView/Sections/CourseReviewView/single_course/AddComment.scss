@@ -1,0 +1,131 @@
+.comment-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 999; 
+
+    .background {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-shadow: none;
+        .content {
+            display: flex;
+            width: fit-content;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.header {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon {
+        font-size: x-large;
+        color: grey;
+    }
+
+    .icon:hover {
+        cursor: pointer;
+        color: black
+    }
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.low-text {
+    color: green;
+}
+
+.med-text {
+    color: darkgoldenrod;
+}
+
+.high-text {
+    color: red;
+}
+
+.input-group{
+  padding:10px;
+  border:2px solid;
+  margin:10px;
+}
+.input-group>label{
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+  position:relative;
+  top:-25px;
+  left:20px;
+  background-color: white;
+}
+
+.input-group>input, .input-group>textarea{
+  width: 100%;
+  height: 80%;
+  background-color: transparent;
+  border:none;
+  outline: none;
+  transform: translateY(-15px);
+  line-height: 2;
+  font-size: large;
+}
+
+.review {
+    width: 30rem;
+    height: 12rem;
+    background-color: aliceblue;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    gap: 0.5rem;
+}
+
+.required {
+    position: relative;
+    cursor: pointer;
+    color: darkred;
+}
+
+.required::after {
+    content: 'This field is required';  /* Tooltip message */
+    position: absolute;
+    bottom: 100%; /* Position above the asterisk */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    white-space: nowrap;
+  }
+  
+  /* Show the tooltip on hover */
+  .required:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }

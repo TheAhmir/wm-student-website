@@ -1,0 +1,12 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.plot-container {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 800px;
+}

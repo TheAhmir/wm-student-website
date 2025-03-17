@@ -1,0 +1,20 @@
+.search{
+    display: flex;
+    gap: 2rem;
+}
+
+.review-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.section-changer {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.section-changer:hover {
+    transform: translateY(-3px) scale(1.05);
+}

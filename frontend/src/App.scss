@@ -1,0 +1,125 @@
+::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.profile-menu {
+  span {
+    color: darkred;
+  }
+}
+
+.nav-menu{
+  font-weight: 600;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  .home-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    gap: 5rem;
+    
+    a {
+      text-decoration: none;
+      color: black;
+      opacity: 0.6;
+    }
+
+    .selected {
+      opacity: 1.0;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    .selected:hover {
+      opacity: 1;
+    }
+  }
+
+  .profile-link {
+    text-decoration: none;
+  }
+
+  .profile-icon {
+    font-size:xx-large;
+    color: black;
+    opacity: 0.6;
+  }
+
+  .profile-icon:hover {
+    opacity: 0.8;
+  }
+
+  .selected {
+    opacity: 1;
+  }
+  .selected:hover {
+    opacity: 1;
+  }
+
+  .profile-text {
+    font-size: larger;
+    color: black;
+    opacity: 0.6;
+  }
+
+  .profile-text:hover {
+    opacity: 0.8;
+  }
+}
+
+.email-not-verified-notice {
+  background-color: rgb(249, 140, 140);
+  margin: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  .verification-text {
+    color: rgb(0, 0, 0, 0.8)
+  }
+
+  .verify-email-button {
+    color: rgba(68, 68, 255, 0.8);
+  }
+  .verify-email-button:hover {
+    cursor: pointer;
+    color: rgba(28, 28, 255, 0.8);
+  }
+}
+
+.verification-sent {
+  background-color: rgb(0, 255, 0, 0.4);
+}
+
+.email-not-verified-content {
+  padding-top: 3.5rem;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
