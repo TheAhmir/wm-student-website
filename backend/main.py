@@ -7,6 +7,7 @@ app = FastAPI()
 origins = [
     "http://localhost:3000",
     "http://localhost:3001",
+    "https://wm-student-website.onrender.com/"
 ]
 
 app.add_middleware(
