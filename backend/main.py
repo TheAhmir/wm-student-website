@@ -7,6 +7,7 @@ app = FastAPI()
 origins = [
     "http://localhost:3000",
     "http://localhost:3001",
+    "https://wm-student-site.netlify.app"
 ]
 
 app.add_middleware(
