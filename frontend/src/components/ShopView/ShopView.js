@@ -4,7 +4,7 @@ import './ShopView.scss'
 
 const ShopView = ({initialData}) => {
     const [user, setUser] = useState();
-    const recent_filler = Array(7).fill(null)
+    // const recent_filler = Array(7).fill(null)
     const [data, setData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const inputRef = useRef("")

@@ -32,7 +32,7 @@ const Nav = () => {
   const navigate = useNavigate()
   const showNavDisplay = !location.pathname.startsWith('/auth')
   const menuLeft = useRef(null);
-  const toast = useRef(null);
+  // const toast = useRef(null);
 
     const handleSignOut = () => {
         signOutUser((result) => {
